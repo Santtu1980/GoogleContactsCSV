@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleContactsCSV", "GoogleContactsCSV\GoogleContactsCSV.csproj", "{C9480DFA-99FD-49AD-82D7-9E4818BD4DFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9480DFA-99FD-49AD-82D7-9E4818BD4DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9480DFA-99FD-49AD-82D7-9E4818BD4DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9480DFA-99FD-49AD-82D7-9E4818BD4DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9480DFA-99FD-49AD-82D7-9E4818BD4DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2C3B259-F8C1-4CD0-8B11-78BA5624B09B}
+	EndGlobalSection
+EndGlobal
