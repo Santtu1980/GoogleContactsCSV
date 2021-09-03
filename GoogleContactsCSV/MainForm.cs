@@ -13,10 +13,10 @@ namespace GoogleContactsCSV
 {
     public partial class MainForm : Form
     {
+        private char separator = ';';
         public MainForm()
         {
             InitializeComponent();
-            this.textBox_pathToTheFile.Text = @"C:\Users\sla\Downloads\contacts2.csv";
         }
 
         private void button_browse_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace GoogleContactsCSV
             {
                 //first line to create header
                 string firstLine = lines[0];
-                string[] headerLabels = firstLine.Split(';');
+                string[] headerLabels = firstLine.Split(separator);
                 foreach (string headerWord in headerLabels)
                 {
                     dt.Columns.Add(new DataColumn(headerWord));
@@ -92,7 +92,7 @@ namespace GoogleContactsCSV
                 //For Data
                 for (int i = 1; i < lines.Length; i++)
                 {
-                    string[] dataWords = lines[i].Split(';');
+                    string[] dataWords = lines[i].Split(separator);
                     DataRow dr = dt.NewRow();
                     int columnIndex = 0;
                     foreach (string headerWord in headerLabels)
@@ -181,6 +181,11 @@ namespace GoogleContactsCSV
                 checkBox_selectAll.Text = "Select all";
                 dataGridView_CSVcontent.ClearSelection();
             }
+        }
+
+        private void label_separator_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($@"If you want to change the separator, you can't.\n\rCurrent separator {separator}");
         }
     }
 }
