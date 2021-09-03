@@ -1,0 +1,3 @@
+# GoogleContactsCSV
+Fast and furious made csv handler for Google Contacts CSV.
+Almost two hours of coding...
